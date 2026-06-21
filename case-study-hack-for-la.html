@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hack for LA — Redesigning Civic Tools for Neighborhood Council Members | Rhea Ren</title>
+  <meta name="description" content="How Rhea Ren led two rounds of usability research at Hack for LA, driving redesigns of key civic platform features and establishing a scalable research process for a volunteer-run team.">
+  <meta property="og:title" content="Redesigning Civic Tools for Neighborhood Council Members | Rhea Ren">
+  <meta property="og:description" content="Two rounds of usability research — 3 major feature redesigns, first research roadmap, and a research process that outlasted the studies.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="case-study-hack-for-la.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Rhea Ren</a>
+      <button class="nav__hamburger" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu" role="list">
+        <li><a href="index.html#work" class="nav__link">Work</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="cs-hero cs-hero--sky">
+      <div class="container">
+        <a href="index.html#work" class="cs-breadcrumb">← All Work</a>
+        <h1 class="cs-hero__title">Redesigning Civic Tools for Neighborhood Council Members</h1>
+        <div class="cs-meta">
+          <div class="cs-meta__item">
+            <span class="cs-meta__label">Organization</span>
+            <span class="cs-meta__value">Hack for LA (Civic Tech Nonprofit)</span>
+          </div>
+          <div class="cs-meta__item">
+            <span class="cs-meta__label">Role</span>
+            <span class="cs-meta__value">UX Researcher</span>
+          </div>
+          <div class="cs-meta__item">
+            <span class="cs-meta__label">Timeline</span>
+            <span class="cs-meta__value">Dec 2022 – Oct 2024</span>
+          </div>
+        </div>
+        <div class="cs-methods">
+          <span class="tag">Usability Testing</span>
+          <span class="tag">User Interviews</span>
+          <span class="tag">Think-Aloud Protocol</span>
+          <span class="tag">Issue Severity Taxonomy</span>
+          <span class="tag">Research Roadmapping</span>
+          <span class="tag">UserTesting</span>
+          <span class="tag">Zoom</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTENT ===================== -->
+    <div class="cs-content">
+      <div class="container">
+
+        <!-- Cover image -->
+        <div class="cs-cover fade-in">
+          <img
+            src="assets/case-study-hack-for-la.jpg"
+            alt="Hack for LA civic platform case study"
+            class="cs-cover__img"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          >
+          <div class="cs-cover__placeholder" style="display:none;" aria-hidden="true">Case study image</div>
+        </div>
+
+        <!-- Overview -->
+        <div class="cs-section fade-in">
+          <h2 class="cs-section__title">Overview</h2>
+          <p>Hack for LA is a volunteer civic tech organization building digital tools for Los Angeles residents and community leaders. Their platform helps neighborhood council members — volunteer civic leaders across LA's 99+ councils — find resources, track events, and locate city contacts. I joined as a UX Researcher in December 2022 and led two rounds of usability research that identified 14 usability issues, drove <strong>three major feature redesigns</strong> (map, calendar, and search), and established the organization's <strong>first formal research process and roadmap</strong> — tools the volunteer team continued using long after the studies ended.</p>
+        </div>
+
+        <!-- The Challenge -->
+        <div class="cs-section fade-in">
+          <h2 class="cs-section__title">The Challenge</h2>
+          <p>Hack for LA's platform had been built primarily by engineers and designers working in short volunteer sprints — without ongoing user research. Features had accumulated usability debt, especially for the core audience: neighborhood council members who are often civic volunteers with varied technical backgrounds. The research challenge was twofold: identify the most critical barriers for real users, and build a way to keep surfacing issues in an organization with no research budget and an entirely volunteer team.</p>
+        </div>
+
+        <!-- Research Approach -->
+        <div class="cs-section fade-in">
+          <h2 class="cs-section__title">Research Approach</h2>
+          <p>Research was structured in two rounds — the first to surface issues with an internal team, the second to validate fixes and test with users who had no prior exposure to the platform.</p>
+          <div class="cs-table-wrap">
+            <table class="rounds-table">
+              <thead>
+                <tr>
+                  <th>1. Internal Bug Bash &nbsp;·&nbsp; November 2023</th>
+                  <th>2. Expanded Usability Validation &nbsp;·&nbsp; June 2024</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td style="vertical-align: top; padding: 1rem 1.25rem;">
+                    <p><strong>Participants:</strong> 5 internal 311Data team members &nbsp;·&nbsp; 30-min Zoom sessions</p>
+                    <p><strong>Goal:</strong> Identify usability issues in map search, data visualization, and filtering before launch</p>
+                    <p><strong>Research Objectives:</strong></p>
+                    <ol style="color: #2D2D2D;">
+                      <li>Test map search functionality — do search functions make sense?</li>
+                      <li>Assess map visualization — is the data display easy to interpret?</li>
+                      <li>Discuss possible design solutions for issues found</li>
+                    </ol>
+                  </td>
+                  <td style="vertical-align: top; padding: 1rem 1.25rem;">
+                    <p><strong>Participants:</strong> 5 Hack for LA members outside the 311Data team &nbsp;·&nbsp; 30-min Zoom sessions</p>
+                    <p><strong>Goal:</strong> Verify Round 1 fixes, test with users who had no prior exposure to the platform, and identify new issues</p>
+                    <p><strong>Research Objectives:</strong></p>
+                    <ol style="color: #2D2D2D;">
+                      <li>Re-test map search and visualization</li>
+                      <li>Evaluate whether Round 1 issues were resolved</li>
+                      <li>Surface new problems from the redesign</li>
+                    </ol>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Round 1 Findings -->
+        <div class="cs-section fade-in">
+          <h2 class="cs-section__title">Round 1: What We Found</h2>
+
+          <img
+            src="assets/hackforla-round1.png"
+            alt="311Data Round 1 usability findings — annotated screenshots of search, map, calendar, and popup issues"
+            class="cs-findings-img"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          >
+          <div class="cs-findings-placeholder" style="display:none;" aria-hidden="true">Round 1 screenshots — replace with your own</div>
+
+          <div class="finding">
+            <h3><strong>Finding 1 — Search Failed on Real User Input</strong></h3>
+            <span class="severity-badge">5/5 users affected</span>
+            <p>The platform had two search boxes (address search and boundary filter) with no clear distinction between them. Users couldn't find neighborhood councils by their common names — typing "Empowerment Congress" returned nothing because the system only recognized the abbreviation "EMP CON." Search history persisted after deselection, forcing users to manually clear input before starting a new search.</p>
+          </div>
+
+          <div class="finding">
+            <h3><strong>Finding 2 — NC Names Invisible on Map</strong></h3>
+            <span class="severity-badge">5/5 users affected</span>
+            <p>Users couldn't identify which neighborhood council a map area belonged to. Boundaries were shown but unlabeled — no hover state, no name overlay, and the NC name in request detail popups was small and buried under the address.</p>
+          </div>
+
+          <div class="finding">
+            <h3><strong>Finding 3 — Calendar Was Unintuitive</strong></h3>
+            <span class="severity-badge">4/5 users affected</span>
+            <p>Users couldn't type dates directly into the date range field and had to click through the calendar month by month. There was no confirmation after selecting a date range, and users kept making selection errors with no easy way to reset. The shortcut dropdown arrow went unnoticed.</p>
+          </div>
+
+          <div class="finding">
+            <h3><strong>Finding 4 — Request Pins Hard to Distinguish</strong></h3>
+            <span class="severity-badge">5/5 users affected</span>
+            <p>Color-coded request dots (especially graffiti) blended into the map at certain zoom levels, and pins at NC boundary edges were difficult to see or attribute to the correct neighborhood.</p>
+          </div>
+
+          <div class="finding">
+            <h3><strong>Finding 5 — Loading Modal Confused Users</strong></h3>
+            <span class="severity-badge">4/5 users affected</span>
+            <p>Long data loads triggered a "Did you know?" popup with no loading indicator. Users didn't understand why a fun fact appeared during their task — they expected a progress bar or spinner, not trivia.</p>
+          </div>
+        </div>
+
+        <!-- Round 2 — Issue Tracking Table -->
+        <div class="cs-section fade-in">
+          <h2 class="cs-section__title">Round 2: Tracking Resolution</h2>
+          <p>Round 2 systematically re-tested Round 1 issues to track what was fixed, what persisted, and what new problems the redesign introduced.</p>
+          <div class="cs-table-wrap">
+            <table class="tracking-table">
+              <thead>
+                <tr>
+                  <th>Problem</th>
+                  <th>Priority</th>
+                  <th>Problem Fixed?</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="tracking-row--alt">
+                  <td data-label="Problem">Users cannot type Empowerment Congress</td>
+                  <td data-label="Priority"><span class="priority-badge priority-badge--high">High</span></td>
+                  <td data-label="Problem Fixed?">✅</td>
+                </tr>
+                <tr>
+                  <td data-label="Problem">Pop-up window: There was no status notification that accompanied the fun messages, especially when loading times were long, and this confused users</td>
+                  <td data-label="Priority"><span class="priority-badge priority-badge--high">High</span></td>
+                  <td data-label="Problem Fixed?">✅</td>
+                </tr>
+                <tr class="tracking-row--alt">
+                  <td data-label="Problem">Users cannot tell the NC name if they only know the address of the location</td>
+                  <td data-label="Priority"><span class="priority-badge priority-badge--medium">Medium</span></td>
+                  <td data-label="Problem Fixed?">❓</td>
+                </tr>
+                <tr>
+                  <td data-label="Problem">Graffiti request color is hard to distinguish on the map and requests on the boundaries are hard to see/distinguish</td>
+                  <td data-label="Priority"><span class="priority-badge priority-badge--medium">Medium</span></td>
+                  <td data-label="Problem Fixed?">✅</td>
+                </tr>
+                <tr class="tracking-row--alt">
+                  <td data-label="Problem">Users cannot tell the NC name easily from the request details</td>
+                  <td data-label="Priority"><span class="priority-badge priority-badge--medium">Medium</span></td>
+                  <td data-label="Problem Fixed?">❓</td>
+                </tr>
+                <tr>
+                  <td data-label="Problem">It took a long time to load a large data request</td>
+                  <td data-label="Priority"><span class="priority-badge priority-badge--medium">Medium</span></td>
+                  <td data-label="Problem Fixed?">✅</td>
+                </tr>
+                <tr class="tracking-row--alt">
+                  <td data-label="Problem">The layout of the calendar was not intuitive</td>
+                  <td data-label="Priority"><span class="priority-badge priority-badge--low">Low</span></td>
+                  <td data-label="Problem Fixed?">❓</td>
+                </tr>
+                <tr>
+                  <td data-label="Problem">It was inconvenient if users wanted to select a long period of time</td>
+                  <td data-label="Priority"><span class="priority-badge priority-badge--low">Low</span></td>
+                  <td data-label="Problem Fixed?">❓</td>
+                </tr>
+                <tr class="tracking-row--alt">
+                  <td data-label="Problem">Users were not sure what the request status meant, nor what the specific categories meant (all, closed, open)</td>
+                  <td data-label="Priority"><span class="priority-badge priority-badge--low">Low</span></td>
+                  <td data-label="Problem Fixed?">✅</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="cs-section__subtitle" style="margin-top: 2.5rem;">New Issues from the Redesign</h3>
+
+          <div class="finding">
+            <h3><strong>New Issue 1 — Region Selection Confusing</strong></h3>
+            <span class="severity-badge">3/5 users affected</span>
+            <p>Users wanted to view the entire city but couldn't find a way to deselect an NC and zoom out. The dropdown had no "all" or "entire city" option, and users didn't realize that clicking the X on a selected NC name would zoom back out.</p>
+          </div>
+
+          <div class="finding">
+            <h3><strong>New Issue 2 — Request Hover Box Flicker</strong></h3>
+            <span class="severity-badge">1 user affected</span>
+            <p>When moving between request dots, the popup briefly showed the previous request's information before updating — a small but disorienting flash.</p>
+          </div>
+
+          <div class="finding">
+            <h3><strong>New Issue 3 — Design Inconsistencies</strong></h3>
+            <span class="severity-badge">Observed</span>
+            <p>Font types varied across the left-hand menu, and the "Water Waste" request color was too similar to the NC boundary color, creating visual confusion.</p>
+          </div>
+        </div>
+
+        <!-- Round 2 Screenshot -->
+        <div class="cs-section fade-in">
+          <img
+            src="assets/hackforla-round2.png"
+            alt="311Data Round 2 usability findings — persistent NC name issue, calendar problems, and new region selection confusion"
+            class="cs-findings-img"
+            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
+          >
+          <div class="cs-findings-placeholder" style="display:none;" aria-hidden="true">Round 2 screenshots — replace with your own</div>
+        </div>
+
+        <!-- Research Impact -->
+        <div class="cs-section fade-in">
+          <h2 class="cs-section__title">Impact</h2>
+          <div class="impact-grid">
+
+            <div class="impact-card">
+              <p class="impact-card__title">Product Impact</p>
+              <ul>
+                <li>8 usability issues identified in Round 1; 5 confirmed fixed in Round 2, 4 tracked as persistent, 3 new issues surfaced from the redesign</li>
+                <li>Persistent issues correctly diagnosed as information architecture problems (NC naming) vs. interaction pattern problems (calendar) — guiding the team toward the right type of fix</li>
+                <li>Findings supported on-time public launch with documented evidence of iterative improvement</li>
+              </ul>
+            </div>
+
+            <div class="impact-card">
+              <p class="impact-card__title">Research Operations Impact</p>
+              <ul>
+                <li>Established the team's first documented research process — templates and workflows that outlasted my involvement on the project</li>
+                <li>Identified recruitment quality gaps during this project that led me to propose and establish a UserTesting platform partnership for the broader Hack for LA organization — improving recruitment efficiency across teams</li>
+                <li>Defined the project's first research roadmap, giving the volunteer team a structured approach to ongoing user research</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Key Learnings -->
+        <div class="cs-section fade-in">
+          <h2 class="cs-section__title">Key Learnings</h2>
+          <div class="impact-grid">
+
+            <div class="reflection-card">
+              <p class="reflection-card__title"><strong>Fixing the Surface Doesn't Fix the Structure</strong></p>
+              <p>Three of the five Round 1 fixes addressed copy or visual treatments. The deeper structural issues — event information architecture, mobile touch targets, category labeling — only surfaced when we got outside the volunteer team. Internal testing surfaces what's immediately broken; external testing reveals what the product assumes about its users.</p>
+            </div>
+
+            <div class="reflection-card">
+              <p class="reflection-card__title"><strong>Research Infrastructure Outlasts Any Single Study</strong></p>
+              <p>The issue taxonomy and research roadmap I built had a longer organizational impact than any individual finding. Months after the studies ended, team members were still using both tools to scope new research questions and report issues consistently — without a researcher in the room. The most durable research contribution isn't a report; it's a process that runs without you.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Impact Statement -->
+        <div class="cs-section fade-in">
+          <div class="cs-impact-statement">
+            <p>Two rounds of usability research drove three major platform redesigns and established Hack for LA's first formal research process — giving a volunteer-run civic tech team the infrastructure to keep improving their platform long after the studies ended.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===================== CASE STUDY NAV ===================== -->
+    <section class="cs-nav" aria-label="Case study navigation">
+      <div class="container">
+        <div class="cs-nav__inner">
+          <a href="case-study-niet.html" class="cs-nav__link cs-nav__link--back">← Previous: NIET</a>
+          <a href="index.html#work" class="cs-nav__link cs-nav__link--next">All Work →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <p class="footer__name">Rhea (Rong) Ren, Ph.D.</p>
+          <p class="footer__tagline">UX Researcher &nbsp;·&nbsp; Mixed-Methods &nbsp;·&nbsp; AI &amp; Product Research</p>
+        </div>
+        <nav class="footer__links" aria-label="Footer links">
+          <a href="mailto:rhearen434@gmail.com">rhearen434@gmail.com</a>
+          <a href="https://linkedin.com/in/rrenasu/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="tel:+15103780744">(510) 378-0744</a>
+        </nav>
+      </div>
+      <p class="footer__copy">© 2025 Rhea Ren. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

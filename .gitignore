@@ -1,0 +1,86 @@
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build output
+dist/
+build/
+.output/
+.next/
+.nuxt/
+.astro/
+
+# Environment and secrets
+.env
+.env.*
+.envrc
+*.pem
+*.key
+*.cert
+credentials.json
+service-account.json
+
+# Personal information
+resume-private.*
+contacts.*
+
+# Python
+__pycache__/
+*.py[codz]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+.Python
+develop-eggs/
+eggs/
+.eggs/
+sdist/
+var/
+wheels/
+.venv/
+venv/
+env/
+ENV/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+*.mo
+*.pot
+db.sqlite3
+db.sqlite3-journal
+.ipynb_checkpoints
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+npm-debug.log*
+pip-log.txt
+
+# Claude Code
+.claude/logs/
+.claude/todos/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+demo/
