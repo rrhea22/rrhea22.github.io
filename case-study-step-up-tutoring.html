@@ -124,40 +124,46 @@
         <div class="cs-section fade-in">
           <h2 class="cs-section__title">What Shipped</h2>
           <h3 style="color: #6c5ce7; margin-bottom: 0.5rem;">Phase 1 — Within 3 Weeks</h3>
-          <div class="cs-table-wrap">
-            <table class="cs-table cs-table--stack">
+          <div style="overflow-x: auto;">
+            <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem; margin-top: 1rem;">
               <thead>
-                <tr>
-                  <th>Feature</th>
-                  <th>Research Finding</th>
-                  <th>Product Change</th>
+                <tr style="background: #f0ebff; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; color: #6c5ce7;">
+                  <th style="padding: 0.75rem 1rem; text-align: left; font-weight: 600; width: 22%;">Research Signal</th>
+                  <th style="padding: 0.75rem 1rem; text-align: left; font-weight: 600; width: 22%;">Product Risk</th>
+                  <th style="padding: 0.75rem 1rem; text-align: left; font-weight: 600; width: 26%;">Decision Influenced</th>
+                  <th style="padding: 0.75rem 1rem; text-align: left; font-weight: 600; width: 30%;">Outcome</th>
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td data-label="Feature">Tool Architecture</td>
-                  <td data-label="Research Finding">Discoverability was a major pain point</td>
-                  <td data-label="Product Change">"AI Whisper" renamed to "Tutor Sidekick," restructured as a sidebar combined with Session Briefing</td>
+                <tr style="border-bottom: 1px solid #eee;">
+                  <td style="padding: 0.75rem 1rem; color: #2d3436; line-height: 1.5;">Tutors had difficulty discovering the AI support tool during live sessions.</td>
+                  <td style="padding: 0.75rem 1rem; color: #636e72; line-height: 1.5;">The tool could be ignored or abandoned under real tutoring pressure.</td>
+                  <td style="padding: 0.75rem 1rem; color: #636e72; line-height: 1.5;">Restructure the tool so support was easier to find and use in context.</td>
+                  <td style="padding: 0.75rem 1rem; color: #2d3436; line-height: 1.5;">"AI Whisper" was renamed "Tutor Sidekick" and redesigned as a sidebar combined with Session Briefing.</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #eee; background: #faf8ff;">
+                  <td style="padding: 0.75rem 1rem; color: #2d3436; line-height: 1.5;">Tutors showed recurring confusion around minimizing and reopening the tool.</td>
+                  <td style="padding: 0.75rem 1rem; color: #636e72; line-height: 1.5;">Interaction friction could interrupt live tutoring flow.</td>
+                  <td style="padding: 0.75rem 1rem; color: #636e72; line-height: 1.5;">Make the AI support experience persistently accessible during sessions.</td>
+                  <td style="padding: 0.75rem 1rem; color: #2d3436; line-height: 1.5;">The sidebar format made access more intuitive and eliminated a recurring confusion pattern.</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #eee;">
+                  <td style="padding: 0.75rem 1rem; color: #2d3436; line-height: 1.5;">Function names were unclear and not action-oriented.</td>
+                  <td style="padding: 0.75rem 1rem; color: #636e72; line-height: 1.5;">Tutors might not understand which support to use in the moment.</td>
+                  <td style="padding: 0.75rem 1rem; color: #636e72; line-height: 1.5;">Revise language for faster comprehension during live sessions.</td>
+                  <td style="padding: 0.75rem 1rem; color: #2d3436; line-height: 1.5;">Three Sidekick function names were revised, and explanatory wording was simplified.</td>
+                </tr>
+                <tr style="border-bottom: 1px solid #eee; background: #faf8ff;">
+                  <td style="padding: 0.75rem 1rem; color: #2d3436; line-height: 1.5;">Tutors were locked into three generated problems regardless of student need.</td>
+                  <td style="padding: 0.75rem 1rem; color: #636e72; line-height: 1.5;">The tool could feel rigid and misaligned with real tutoring needs.</td>
+                  <td style="padding: 0.75rem 1rem; color: #636e72; line-height: 1.5;">Give tutors more control over generated practice content.</td>
+                  <td style="padding: 0.75rem 1rem; color: #2d3436; line-height: 1.5;">Tutors can now adjust problem set size and difficulty on the fly.</td>
                 </tr>
                 <tr>
-                  <td data-label="Feature">Interaction Flow</td>
-                  <td data-label="Research Finding">Recurring confusion around minimizing and accessing the tool</td>
-                  <td data-label="Product Change">Sidebar format made access intuitive, eliminating the confusion pattern</td>
-                </tr>
-                <tr>
-                  <td data-label="Feature">UI Language</td>
-                  <td data-label="Research Finding">Function names were unclear and non-actionable</td>
-                  <td data-label="Product Change">Three Sidekick function names revised for clarity; explanation wording simplified</td>
-                </tr>
-                <tr>
-                  <td data-label="Feature">Tutor Control</td>
-                  <td data-label="Research Finding">Problem sets locked to 3 regardless of student need</td>
-                  <td data-label="Product Change">Tutors can now adjust problem set size and difficulty on the fly</td>
-                </tr>
-                <tr>
-                  <td data-label="Feature">AI Feedback Model</td>
-                  <td data-label="Research Finding">Session summaries missed non-verbal cues</td>
-                  <td data-label="Product Change">Model refined to recognize non-verbal interaction cues for more accurate summaries</td>
+                  <td style="padding: 0.75rem 1rem; color: #2d3436; line-height: 1.5;">AI-generated session summaries missed non-verbal tutor-student cues.</td>
+                  <td style="padding: 0.75rem 1rem; color: #636e72; line-height: 1.5;">Inaccurate feedback could reduce tutor trust in AI-generated coaching.</td>
+                  <td style="padding: 0.75rem 1rem; color: #636e72; line-height: 1.5;">Refine the AI feedback model to better reflect real tutoring interactions.</td>
+                  <td style="padding: 0.75rem 1rem; color: #2d3436; line-height: 1.5;">The model was updated to recognize non-verbal interaction cues and produce more useful summaries.</td>
                 </tr>
               </tbody>
             </table>
@@ -169,22 +175,18 @@
           <div style="display: grid; gap: 1.5rem; margin-top: 1.5rem;">
 
             <div style="background: #faf8ff; border-left: 4px solid #6c5ce7; border-radius: 8px; padding: 1.5rem;">
-              <h4 style="margin: 0 0 0.5rem 0; color: #2d3436;">User Segmentation</h4>
-              <p style="margin: 0; color: #636e72; line-height: 1.6;">Created a behavioral user segmentation model in PostHog based on actual usage patterns. This helped the team prioritize which feedback to act on — focusing development effort on mid- and power users rather than treating all feedback equally.</p>
+              <h4 style="margin: 0 0 0.5rem 0; color: #2d3436;">Prioritized Mid- and Power-User Feedback</h4>
+              <p style="margin: 0; color: #636e72; line-height: 1.6;">Created a behavioral segmentation model in PostHog based on actual usage patterns. This helped the team focus product iteration on mid- and power users rather than treating all tutor feedback equally.</p>
             </div>
 
             <div style="background: #faf8ff; border-left: 4px solid #6c5ce7; border-radius: 8px; padding: 1.5rem;">
-              <h4 style="margin: 0 0 0.5rem 0; color: #2d3436;">Session Briefing Redesign</h4>
-              <p style="margin: 0; color: #636e72; line-height: 1.6;">Rewrote the Session Briefing overview to clearly highlight the goal of each piece of feedback. Simplified the number of feedback items shown and added visual progress dots — so tutors can see why they are receiving specific feedback and what they have already accomplished.</p>
+              <h4 style="margin: 0 0 0.5rem 0; color: #2d3436;">Clarified Session Briefing Value</h4>
+              <p style="margin: 0; color: #636e72; line-height: 1.6;">Rewrote the Session Briefing overview to make the purpose of each feedback element clearer. Simplified the number of feedback items shown and added visual progress dots so tutors could understand what they had accomplished and why specific feedback was being surfaced.</p>
             </div>
 
             <div style="background: #faf8ff; border-left: 4px solid #6c5ce7; border-radius: 8px; padding: 1.5rem;">
-              <h4 style="margin: 0 0 0.5rem 0; color: #2d3436;">Tutor Sidekick Improvements</h4>
-              <ul style="margin: 0; padding-left: 1.2rem; color: #636e72; line-height: 1.8;">
-                <li>AI-generated problem accuracy improved by 5%; generation speed is noticeably faster</li>
-                <li>Problems now include visuals, making practice sets more engaging for students</li>
-                <li>Improved the user path so tutors can view previously generated problems — a top-requested feature from usability testing</li>
-              </ul>
+              <h4 style="margin: 0 0 0.5rem 0; color: #2d3436;">Improved Tutor Sidekick Quality and Recovery Flow</h4>
+              <p style="margin: 0; color: #636e72; line-height: 1.6;">Partnered with the team to improve AI-generated problem accuracy, generation speed, and visual clarity. Also improved the return path so tutors could access previously generated problem sets instead of regenerating them.</p>
             </div>
 
           </div>
