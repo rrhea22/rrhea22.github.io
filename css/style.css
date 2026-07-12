@@ -2172,7 +2172,7 @@ textarea:focus-visible {
   .hero { min-height: 85vh; padding: 8rem 0 6rem; }
 
   .cards-grid    { grid-template-columns: repeat(3, 1fr); }
-  .skills-grid   { grid-template-columns: repeat(3, 1fr); }
+  .skills-grid   { grid-template-columns: repeat(2, 1fr); align-items: stretch; }
   .insight-grid  { grid-template-columns: repeat(3, 1fr); }
   .impact-blocks { grid-template-columns: repeat(3, 1fr); }
   .edu-grid      { grid-template-columns: 1fr 1fr; }
