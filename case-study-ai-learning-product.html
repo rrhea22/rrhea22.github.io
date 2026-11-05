@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continuous Research for an AI Learning Product | Rhea Ren</title>
+  <meta name="description" content="How Rhea Ren built a continuous usability research cycle for an AI learning product, shipping at least 3 fixes per round across five rounds of testing.">
+  <meta property="og:title" content="Continuous Research for an AI Learning Product | Rhea Ren">
+  <meta property="og:description" content="Sole researcher on an AI learning product in development — built a test, prioritize, fix, re-test cycle across rounds 13–17.">
+  <meta property="og:type" content="website">
+  <link rel="canonical" href="case-study-ai-learning-product.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://t.contentsquare.net/uxa/33400fa939556.js" defer></script>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <nav class="nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">Rhea Ren</a>
+      <button class="nav__hamburger" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu" role="list">
+        <li><a href="index.html#work" class="nav__link">Work</a></li>
+        <li><a href="testimonials.html" class="nav__link">Testimonials</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__link nav__link--cta">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="cs-hero cs-hero--sky">
+      <div class="container">
+        <a href="index.html#work" class="cs-breadcrumb">← All Work</a>
+        <h1 class="cs-hero__title">Running continuous research for an AI learning product as its sole researcher</h1>
+        <p style="font-size: 0.875rem; font-style: italic; opacity: 0.75; margin: 0.75rem 0 1.5rem 0;">To protect confidentiality, this case study does not name the company or product, and all visuals use sample data. I'm happy to discuss more details on request.</p>
+        <div class="cs-meta">
+          <div class="cs-meta__item">
+            <span class="cs-meta__label">Role</span>
+            <span class="cs-meta__value">Sole UX Researcher · Contract</span>
+          </div>
+          <div class="cs-meta__item">
+            <span class="cs-meta__label">Scope</span>
+            <span class="cs-meta__value">Rounds 13–17, continuing</span>
+          </div>
+          <div class="cs-meta__item">
+            <span class="cs-meta__label">Timeline</span>
+            <span class="cs-meta__value">Sep 2026 – Present</span>
+          </div>
+        </div>
+        <div class="cs-methods">
+          <span class="tag tag--sky">Moderated Usability Testing</span>
+          <span class="tag tag--sky">Think-Aloud Protocol</span>
+          <span class="tag tag--sky">Structured Interviews</span>
+          <span class="tag tag--sky">Cumulative Personas</span>
+          <span class="tag tag--sky">Research Ops</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTENT ===================== -->
+    <div class="cs-content">
+      <div class="container">
+
+        <!-- Context -->
+        <div class="cs-section fade-in">
+          <h2 class="cs-section__title">Context</h2>
+          <p style="color: #2D2D2D;">The product is an AI learning tool for working professionals. An AI trainer sits beside a real AI assistant and coaches learners while they write prompts for scenarios drawn from their own jobs.</p>
+          <p style="color: #2D2D2D; margin-top: 1rem;">The team's only other researcher left two days after I joined, so I took over the research program mid-stream, starting with round 13. The product was changing every round, which meant research had to keep pace with the build rather than run as one-off studies.</p>
+        </div>
+
+        <!-- Research Questions -->
+        <div class="cs-section fade-in">
+          <h2 class="cs-section__title">Research Questions</h2>
+          <p style="color: #2D2D2D;">Each round answered three questions, in order of importance:</p>
+          <ol style="margin: 1rem 0 0 0; padding-left: 1.5rem; color: #2D2D2D; line-height: 1.9;">
+            <li>Does the learning loop (practice, AI response, coaching feedback) actually help people learn?</li>
+            <li>Do onboarding and the first tutorial prepare learners to use the product on their own?</li>
+            <li>Does the course content feel relevant to learners' real work?</li>
+          </ol>
+        </div>
+
+        <!-- Approach -->
+        <div class="cs-section fade-in">
+          <h2 class="cs-section__title">Approach</h2>
+          <p style="color: #2D2D2D;">I ran research as a continuous cycle, so each round both found new issues and checked whether last round's fixes worked.</p>
+
+          <style>
+            .research-cycle-wrap {
+              margin: 2rem 0;
+              padding: 1.75rem;
+              background: #eef6fd;
+              border-radius: 12px;
+            }
+            .research-cycle-title {
+              text-align: center;
+              font-weight: 600;
+              font-size: 0.95rem;
+              color: #2d3436;
+              margin: 0 0 1.5rem 0;
+            }
+            .research-cycle-steps {
+              display: flex;
+              align-items: stretch;
+              gap: 0.25rem;
+              justify-content: center;
+            }
+            .cycle-box {
+              flex: 1;
+              min-width: 0;
+              background: white;
+              border: 1.5px solid #c5e3f7;
+              border-radius: 8px;
+              padding: 0.875rem 0.5rem;
+              text-align: center;
+              font-size: 0.8rem;
+              font-weight: 600;
+              color: #2d3436;
+              line-height: 1.3;
+            }
+            .cycle-box span {
+              display: block;
+              font-weight: 400;
+              font-size: 0.72rem;
+              color: #636e72;
+              margin-top: 0.3rem;
+            }
+            .cycle-box--accent {
+              background: #f0ebff;
+              border-color: #6c5ce7;
+              color: #6c5ce7;
+            }
+            .cycle-box--accent span { color: #9b8bd4; }
+            .cycle-arrow {
+              color: #74b9ff;
+              font-size: 1rem;
+              flex-shrink: 0;
+              display: flex;
+              align-items: center;
+              padding: 0 0.1rem;
+            }
+            .cycle-return {
+              text-align: center;
+              font-size: 0.8rem;
+              color: #636e72;
+              font-style: italic;
+              margin: 0.875rem 0 0 0;
+            }
+            @media (max-width: 640px) {
+              .research-cycle-steps {
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0.4rem;
+              }
+              .cycle-box { padding: 0.75rem 1rem; font-size: 0.875rem; }
+              .cycle-arrow {
+                justify-content: center;
+                font-size: 1.1rem;
+                transform: rotate(90deg);
+                padding: 0;
+              }
+            }
+            .insights-grid {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              gap: 1.5rem;
+              margin-top: 1.5rem;
+            }
+            .insight-card {
+              background: white;
+              border: 1px solid #e0e0e0;
+              border-radius: 12px;
+              padding: 1.5rem;
+            }
+            .insight-card__title {
+              font-weight: 700;
+              font-size: 0.95rem;
+              color: #2d3436;
+              margin: 0 0 1rem 0;
+            }
+            .insight-card__label {
+              font-size: 0.72rem;
+              text-transform: uppercase;
+              letter-spacing: 0.05em;
+              color: #6c5ce7;
+              font-weight: 600;
+              margin: 0.875rem 0 0.3rem 0;
+            }
+            .insight-card p:not(.insight-card__title):not(.insight-card__label) {
+              font-size: 0.875rem;
+              color: #636e72;
+              line-height: 1.65;
+              margin: 0;
+            }
+            @media (max-width: 640px) {
+              .insights-grid { grid-template-columns: 1fr; }
+            }
+          </style>
+
+          <div class="research-cycle-wrap">
+            <p class="research-cycle-title">Every round re-tests the fixes from the round before.</p>
+            <div class="research-cycle-steps">
+              <div class="cycle-box">Recruit<span>novice to expert</span></div>
+              <div class="cycle-arrow">→</div>
+              <div class="cycle-box">Test<span>90-min sessions</span></div>
+              <div class="cycle-arrow">→</div>
+              <div class="cycle-box">Synthesize<span>timestamped notes</span></div>
+              <div class="cycle-arrow">→</div>
+              <div class="cycle-box">Prioritize<span>P0 to P2 report</span></div>
+              <div class="cycle-arrow">→</div>
+              <div class="cycle-box cycle-box--accent">Team fixes<span>3+ changes a round</span></div>
+            </div>
+            <p class="cycle-return">↺ next round re-tests the fixes</p>
+          </div>
+
+          <ul style="margin: 0; padding-left: 1.25rem; color: #2D2D2D; line-height: 1.8;">
+            <li style="margin-bottom: 0.5rem;"><strong>Sessions:</strong> moderated remote sessions of about 90 minutes, with screen share and remote control. Learners thought aloud while they worked, then answered a structured interview with ratings.</li>
+            <li style="margin-bottom: 0.5rem;"><strong>Participants:</strong> recruited on purpose across the range of AI experience, from daily multi-tool users to people who had only used voice assistants. Many findings split along that line, so I reported splits as splits.</li>
+            <li><strong>Cadence:</strong> a new round on each new build, with the script updated to target what changed.</li>
+          </ul>
+        </div>
+
+        <!-- Research System -->
+        <div class="cs-section fade-in">
+          <h2 class="cs-section__title">The Research System I Built</h2>
+          <p style="color: #2D2D2D;">As the only researcher on a product that changed every round, I needed a system that kept synthesis fast without losing rigor.</p>
+
+          <div style="display: grid; gap: 1.25rem; margin-top: 1.5rem;">
+
+            <div style="background: #faf8ff; border-left: 4px solid #6c5ce7; border-radius: 8px; padding: 1.5rem;">
+              <h4 style="margin: 0 0 0.5rem 0; color: #2d3436;">Timestamped note-taking sheet</h4>
+              <p style="margin: 0; color: #636e72; line-height: 1.6;">I log each participant's path and every issue against the session time, so patterns are quick to spot and every quote traces back to a moment in the recording.</p>
+            </div>
+
+            <div style="background: #faf8ff; border-left: 4px solid #6c5ce7; border-radius: 8px; padding: 1.5rem;">
+              <h4 style="margin: 0 0 0.5rem 0; color: #2d3436;">AI-assisted workflows</h4>
+              <p style="margin: 0; color: #636e72; line-height: 1.6;">I use a Claude skill to draft each round's report from my notes, then review and revise it. I gathered the team's feedback on the report and updated the skill to match: prioritized recommendations now come first, durable findings second, and perishable UI details last — a format the team liked. I also built additional Claude skills for team update messages and participant recruiting, so routine work takes less of each round.</p>
+            </div>
+
+            <div style="background: #faf8ff; border-left: 4px solid #6c5ce7; border-radius: 8px; padding: 1.5rem;">
+              <h4 style="margin: 0 0 0.5rem 0; color: #2d3436;">Prioritization with a success bar</h4>
+              <p style="margin: 0; color: #636e72; line-height: 1.6;">Each recommendation is ranked P0 to P2 and paired with "what success looks like," so the next round can check whether a fix actually worked. Priority depends on two things: whether an issue has shown up in earlier rounds, and whether it blocked learners from completing the task.</p>
+            </div>
+
+            <div style="background: #faf8ff; border-left: 4px solid #6c5ce7; border-radius: 8px; padding: 1.5rem;">
+              <h4 style="margin: 0 0 0.5rem 0; color: #2d3436;">Cumulative personas</h4>
+              <p style="margin: 0; color: #636e72; line-height: 1.6;">Four persona cards — such as a "Pragmatic Operator" and an "Anxious Knowledge Worker" — are updated every round instead of rebuilt, with each new participant added as evidence.</p>
+            </div>
+
+            <div style="background: #faf8ff; border-left: 4px solid #6c5ce7; border-radius: 8px; padding: 1.5rem;">
+              <h4 style="margin: 0 0 0.5rem 0; color: #2d3436;">Cross-round summary at a phase change</h4>
+              <p style="margin: 0; color: #636e72; line-height: 1.6;">When the product moved into a new phase at round 17, I wrote a summary of rounds 11 to 16 so the team could see which issues had been resolved and which were still open before the new phase began.</p>
+            </div>
+
+            <div style="background: #faf8ff; border-left: 4px solid #6c5ce7; border-radius: 8px; padding: 1.5rem;">
+              <h4 style="margin: 0 0 0.5rem 0; color: #2d3436;">Built-in rigor</h4>
+              <p style="margin: 0; color: #636e72; line-height: 1.6;">Every report opens with a methods caveat (small samples, moderator help, what was not tested), marks findings that repeat earlier rounds, and lists protocol fixes for the next round.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Key Insights -->
+        <div class="cs-section fade-in">
+          <h2 class="cs-section__title">Key Insights</h2>
+          <p style="color: #2D2D2D;">Specific findings changed from round to round, but they kept falling into four themes. I tracked each theme across rounds, so the team could see which problems were solved and which kept coming back.</p>
+
+          <div class="insights-grid">
+
+            <div class="insight-card">
+              <p class="insight-card__title">1. Onboarding that prepares learners</p>
+              <p class="insight-card__label">What we kept seeing</p>
+              <p>Learners arrived with very different AI backgrounds. First-time users didn't know where to type or what the course would teach; experienced users wanted to skip the basics.</p>
+              <p class="insight-card__label">What it led to</p>
+              <p>Ask about AI experience at setup, introduce each part of the interface step by step, and show the learning path before practice starts.</p>
+            </div>
+
+            <div class="insight-card">
+              <p class="insight-card__title">2. Trust in the AI trainer</p>
+              <p class="insight-card__label">What we kept seeing</p>
+              <p>Learners relied on the trainer only when it responded to what they were actually doing. Vague directions, replies to background talk, and doing a step for the learner all eroded that trust.</p>
+              <p class="insight-card__label">What it led to</p>
+              <p>Clear visual separation between the trainer and the AI tool, explicit guidance tied to the lesson goal, and hints that escalate instead of doing the work.</p>
+            </div>
+
+            <div class="insight-card">
+              <p class="insight-card__title">3. Getting comfortable with the learning loop quickly</p>
+              <p class="insight-card__label">What we kept seeing</p>
+              <p>Prior AI experience shaped how fast learners settled in. Daily AI users moved quickly; voice-assistant users expected to talk to the AI and needed more guidance to complete tasks.</p>
+              <p class="insight-card__label">What it led to</p>
+              <p>A tutorial that ends with "type to the AI here, talk to the trainer," and controls that are easy to tell apart.</p>
+            </div>
+
+            <div class="insight-card">
+              <p class="insight-card__title">4. Learning gains and return</p>
+              <p class="insight-card__label">What we kept seeing</p>
+              <p>Scenarios drawn from learners' own jobs were consistently the strongest value driver, and learners left with concrete prompt-writing habits. Self-ratings, though, ran ahead of what we observed.</p>
+              <p class="insight-card__label">What it led to</p>
+              <p>A "show me what you learned" check added to the protocol, alongside relevance and likelihood-to-return ratings.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Impact -->
+        <div class="cs-section fade-in">
+          <h2 class="cs-section__title">Impact</h2>
+          <p style="color: #2D2D2D;">Research became part of how the team builds, not a separate deliverable.</p>
+
+          <div class="impact-grid" style="margin-top: 1.5rem;">
+
+            <div class="impact-card">
+              <p class="impact-card__title">Research Velocity</p>
+              <ul style="margin: 0.5rem 0 0 0; padding-left: 1.25rem; font-size: 0.9rem; color: #2D2D2D; line-height: 1.72;">
+                <li>At least 3 changes shipped every round, prioritized by how often an issue recurred and whether it blocked task completion — then re-tested the following round.</li>
+                <li>Personas guided the redesign of the learning loop and onboarding.</li>
+              </ul>
+            </div>
+
+            <div class="impact-card">
+              <p class="impact-card__title">Research Reach</p>
+              <ul style="margin: 0.5rem 0 0 0; padding-left: 1.25rem; font-size: 0.9rem; color: #2D2D2D; line-height: 1.72;">
+                <li>A clear starting point for the new phase: the rounds 11–16 summary showed the team what was done and what still needed work.</li>
+                <li>A report format the team adopted: leading with prioritized recommendations made each round's findings faster to act on.</li>
+                <li>Research reached leadership: session highlights were shown at a company all-hands.</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Reflection -->
+        <div class="cs-section fade-in">
+          <h2 class="cs-section__title">Reflection</h2>
+          <p style="color: #2D2D2D;">With only two participants per round, no single round proves much. What made the findings trustworthy was the cycle itself: tracking which issues repeated across rounds, and checking whether each fix held up the next time. I also learned to recruit across experience levels on purpose, because the same screen can be easy for a daily AI user and a wall for a first-time one.</p>
+        </div>
+
+        <!-- Impact Statement -->
+        <div class="cs-section fade-in">
+          <div class="cs-impact-statement">
+            <p>Stepped in as sole researcher mid-stream and built a research cycle that turned each round of testing into fixes the team shipped and re-tested the next round.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===================== CASE STUDY NAV ===================== -->
+    <section class="cs-nav" aria-label="Case study navigation">
+      <div class="container">
+        <div class="cs-nav__inner">
+          <a href="index.html#work" class="cs-nav__link cs-nav__link--back">← Back to All Work</a>
+          <a href="case-study-step-up-tutoring.html" class="cs-nav__link cs-nav__link--next">Next: Step Up Tutoring →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <p class="footer__name">Rhea (Rong) Ren, Ph.D.</p>
+          <p class="footer__tagline">UX Researcher &nbsp;·&nbsp; Mixed-Methods &nbsp;·&nbsp; AI &amp; Product Research</p>
+        </div>
+        <nav class="footer__links" aria-label="Footer links">
+          <a href="mailto:rhearen434@gmail.com">rhearen434@gmail.com</a>
+          <a href="https://linkedin.com/in/rrenasu/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="tel:+15103780744">(510) 378-0744</a>
+        </nav>
+      </div>
+      <p class="footer__copy">© 2026 Rhea Ren. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
